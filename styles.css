@@ -1,0 +1,98 @@
+/* styles.css */
+
+/* Reset beberapa styling default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dan dasar tata letak */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form pencarian */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#searchInput {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk hasil pencarian dalam bentuk vertikal */
+#results {
+    margin-top: 30px;
+}
+
+/* Container untuk setiap hasil pencarian */
+.result-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk label dalam hasil pencarian */
+.result-item .label {
+    font-weight: bold;
+}
+
+/* Menata kolom dan nilai */
+.result-item .value {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Jika data tidak ditemukan */
+.no-results {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsif untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
